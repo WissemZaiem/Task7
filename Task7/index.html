@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="liste-de-choses-a-faire.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="plan">What are you going to plan ?</div>
+      <div class="add-button" id="addButton">
+        <div class="add-new">Add new</div>
+        <div class="plus">
+          <img class="add-img" src="ajouter.png" alt="add-button" />
+        </div>
+      </div>
+    </div>
+    <div class="list">
+      <div class="item">
+        <div class="title">Play some guitar</div>
+        <div class="details">Lorem ipsum dolor sit, amet consectetur</div>
+        <div class="date">25/03/2023</div>
+        <div class="delete">X</div>
+      </div>
+      <div class="item">
+        <div class="title">Learn JS DOM</div>
+        <div class="details">Lorem ipsum dolor sit, amet consectetur</div>
+        <div class="date">25/03/2023</div>
+        <div class="delete">X</div>
+      </div>
+    </div>
+    <div class="add-menu" id="addMenu">
+      <div class="headers1">
+        <div class="add-menu-title">Add a new todo</div>
+        <div class="close">X</div>
+      </div>
+      <div class="infos">
+        <label for="todoTitle">Enter your todo title</label>
+        <input type="text" id="todoTitle" />
+      </div>
+      <div class="infos">
+        <label for="todoDetails">Enter your todo details</label>
+        <input type="text" id="todoDetails" />
+      </div>
+      <div class="infos">
+        <label for="todoDeadline">Enter your todo deadline</label>
+        <input type="date" id="todoDeadline" />
+      </div>
+      <div class="add-save" id="addSave">Add and save</div>
+    </div>
+    <div id="Data"></div>
+  </body>
+</html>

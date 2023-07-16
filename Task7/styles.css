@@ -1,0 +1,152 @@
+body {
+  position: relative;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  margin-top: 2%;
+}
+.plan {
+  font-size: 30px;
+  font-weight: 500;
+  color: #a2d2ff;
+}
+.add-button {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+}
+.add-img {
+  width: 40px;
+}
+.add-new {
+  font-size: 20px;
+  font-weight: 700;
+  color: #a2d2ff;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3%;
+  gap: 3vh;
+}
+.item {
+  background: #ffc8dd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  padding: 1%;
+  width: 60%;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+}
+.title {
+  font-size: 20px;
+  font-weight: 500;
+  width: 25%;
+}
+.details {
+  width: 25%;
+}
+.item:hover {
+  background-color: #ffafcc;
+}
+.date {
+  display: flex;
+  justify-content: flex-end;
+  border-radius: 10px;
+  padding: 1.5%;
+  background: #ffc8dd;
+}
+.item::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -1%;
+  width: 0;
+  height: 1px;
+  background-color: black;
+  transition: width 0.3s ease;
+}
+
+.item.clicked::before {
+  width: 102%;
+}
+.add-menu {
+  background: #cdb4db;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  position: absolute;
+  left: 25%;
+  top: 50px;
+  justify-content: flex-start;
+  height: fit-content;
+  padding: 1.5%;
+  justify-content: space-evenly;
+  border-radius: 10px;
+  display: none;
+  z-index: 2;
+}
+.add-menu-title {
+  font-size: 30px;
+  font-weight: 600;
+  color: #03045e;
+  margin-bottom: 30px;
+}
+.infos {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  gap: 2vh;
+}
+input {
+  height: 5vh;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  border: 0px;
+}
+input:focus {
+  background: rgb(250, 238, 238);
+}
+label {
+  font-weight: bold;
+}
+.headers1 {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.close {
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.add-save {
+  align-self: flex-end;
+  margin-top: 10%;
+  font-size: 20px;
+  background: #fff;
+  padding: 2%;
+  border-radius: 10px;
+  color: #023e8a;
+  border: 1px solid #023e8a;
+}
+.add-save:hover {
+  background: #023e8a;
+  color: white;
+  cursor: pointer;
+}
